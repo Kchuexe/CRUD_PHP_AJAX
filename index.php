@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<h1 class="text-center p-3">CRUD PHP + AJAX</h1>
+    <h1 class="text-center p-3">CRUD PHP + AJAX</h1>
     <div class="container-fluid">
         <div class="row">
             <div class="col">
@@ -25,22 +25,22 @@
                     <div class="card-body">
                         <p id="eli_mensaje" class="text-dark"></p>
                         <div id="table">
-                         <table class="table table-hover table-bordered table-striped" id="tabla">
-                    <thead class="bg-info">
-                        <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">NOMBRE</th>
-                            <th scope="col">CÓDIGO</th>
-                            <th scope="col">UNIDAD</th>
-                            <th scope="col">VALOR</th>
-                            <th scope="col">FECHA</th>
-                            <th scope="col">TIEMPO</th>
-                            <th scope="col">ORIGEN</th>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                        </tr>
-                    </thead>     
-                </table> 
+                            <table class="table table-hover table-bordered table-striped" id="tabla">
+                                <thead class="bg-info">
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">NOMBRE</th>
+                                        <th scope="col">CÓDIGO</th>
+                                        <th scope="col">UNIDAD</th>
+                                        <th scope="col">VALOR</th>
+                                        <th scope="col">FECHA</th>
+                                        <th scope="col">TIEMPO</th>
+                                        <th scope="col">ORIGEN</th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" id="btn_actualizar">Actualizar</button>
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn_close">Cancelar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn_cancelar">Cancelar</button>
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@
                 <div class="modal-body">
                     <p>¿Desea eliminar el registro?</p>
                     <button type="button" class="btn btn-success" id="btn_eliminar_registro">Eliminar</button>
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn_close">Cancelar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn_cancelar">Cancelar</button>
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.js"></script>
     <script src="js/script.js"></script>
-    
+
 </body>
 
 </html>

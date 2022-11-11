@@ -8,7 +8,7 @@ $(document).ready(function()
 })
 
 
-// insertar
+
 function insertar_registro()
 {
    $(document).on('click','#btn_registro',function()
@@ -50,23 +50,9 @@ function insertar_registro()
    })   
 }
 
-// Mostrar datos de la tabla
+
 function ver_registro()
 {
-    // $.ajax(
-    //     {
-    //         url: '../Tarea_Desarrollo/controlador/mostrar.php',
-    //         method: 'post',
-    //         success: function(data)
-    //         {
-    //             data = $.parseJSON(data);
-    //             if(data.status=='success')
-    //             {
-    //                 $('#table').html(data.html);
-                    
-    //             }
-    //         }
-    //     })
     $('#tabla').DataTable({
         'processing': true,
         'serverSide': true,
@@ -109,7 +95,7 @@ function ver_registro()
      });
 }
 
-//obtener un registro
+
 function obtener_registro()
 {
     $(document).on('click','#btn_editar',function()
@@ -131,14 +117,14 @@ function obtener_registro()
                    $('#up_fecha').val(data[5]);
                    $('#up_origen').val(data[7]);
                    $('#actualizar').modal('show');
-                   //console.log(data[1]);
+                   
                 }
                 
             })
     })
 }
 
-// Update Record 
+
 function actualizar_registro()
 {
     
@@ -177,7 +163,7 @@ function actualizar_registro()
     })
 }
 
-// eliminar
+
 function eliminar_registro()
 {
     $(document).on('click','#btn_eliminar',function()
